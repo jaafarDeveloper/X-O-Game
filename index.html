@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X O Game</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobil.css">
+
+</head>
+<body>
+    <div class="game">
+        <h2 class="title">Player X’s turn </h2>
+
+        <div class="contain3">
+            <button class="squre" onclick="xOrO(this.id)" id="item1"></button>
+            <button class="squre" onclick="xOrO(this.id)" id="item2"></button>
+            <button  class="squre" onclick="xOrO(this.id)" id="item3"></button>
+        </div>
+
+        <div class="contain3">
+            <button class="squre" onclick="xOrO(this.id)" id="item4"></button>
+            <button class="squre" onclick="xOrO(this.id)" id="item5"></button>
+            <button class="squre" onclick="xOrO(this.id)" id="item6"></button>
+        </div>
+
+        <div class="contain3">
+            <button class="squre" onclick="xOrO(this.id)" id="item7"></button>
+            <button class="squre" onclick="xOrO(this.id)" id="item8"></button>
+            <button class="squre" onclick="xOrO(this.id)" id="item9"></button>
+        </div>
+        <div class="counts">
+
+            <div class="player-x">
+                <p class="p-player-x">Player X : </p>
+            <input disabled="disabled" id="count-x" type="number">
+            </div>
+
+
+
+            <div class="player-o">
+                <p>Player O : </button>
+            <input disabled="disabled" id="count-o" type="number">
+            </div>
+
+            
+
+        </div>
+
+        <div class="parent-rest">
+            <button onclick="cardConfirm()" id="reset-btn">Reset</button>
+        </div>
+
+    </div>
+    
+
+
+
+    <div id="card">
+
+        <div>
+            <h2>Are you sure ?</h2>
+            <p>Do you really want to reset the game</p>
+            <div>
+                <button onclick="resetNo()" id="no-btn">No</button>
+                <button onclick="resetYes()" id="yes-btn">yes</button>
+    
+            </div>
+        </div>
+
+    </div>
+    
+    <script defer src="script.js"></script>
+</body>
+</html>
